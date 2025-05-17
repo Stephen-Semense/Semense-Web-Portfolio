@@ -1,0 +1,112 @@
+* {
+    box-sizing: border-box;
+  }
+  
+  body {
+    margin: 0;
+    font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+    background-image: url('../img/WatchBG.jpg'); 
+    background-size: cover;
+    background-position: center;
+    color: #fff;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    height: 100vh;
+    padding: 10px;
+  }
+  
+  #app {
+    background: rgba(0, 0, 0, 0.5);
+    padding: 30px 40px 40px;
+    border-radius: 15px;
+    box-shadow: 0 8px 30px rgba(0, 0, 0, 0.35);
+    width: 350px;
+    max-width: 100%;
+    user-select: none;
+    display: flex;
+    flex-direction: column;
+  }
+  
+  h1 {
+    margin: 0 0 20px;
+    font-weight: 700;
+    font-size: 2.4rem;
+    text-align: center;
+    letter-spacing: 2px;
+  }
+  
+  #display {
+    font-size: 4rem;
+    font-weight: 700;
+    text-align: center;
+    margin-bottom: 30px;
+    font-variant-numeric: tabular-nums;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    gap: 12px;
+    letter-spacing: 0;
+  }
+  
+  .time-segment {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    width: 60px;
+    font-variant-numeric: tabular-nums;
+  }
+  
+  .time-value {
+    font-family: monospace;
+    width: 100%;
+    text-align: center;
+  }
+  
+  .time-divider {
+    font-weight: 700;
+    display: flex;
+    align-items: center;
+    font-size: 4rem;
+    line-height: 1;
+    user-select: none;
+  }
+  
+  #ampm {
+    width: 55px;
+    font-size: 1.8rem;
+    font-weight: 700;
+    text-align: center;
+    font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+    user-select: none;
+    opacity: 0.85;
+  }
+  
+  @media (max-width: 400px) {
+    #app {
+      padding: 20px 25px 25px;
+      width: 100%;
+      max-height: 600px;
+    }
+  
+    h1 {
+      font-size: 1.8rem;
+      margin-bottom: 15px;
+    }
+  
+    #display {
+      font-size: 3rem;
+      margin-bottom: 20px;
+      gap: 8px;
+    }
+  
+    .time-segment {
+      width: 45px;
+    }
+  
+    #ampm {
+      font-size: 1.4rem;
+      width: 45px;
+    }
+  }
+  

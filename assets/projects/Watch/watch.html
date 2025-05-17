@@ -1,0 +1,30 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1, maximum-scale=1, user-scalable=no" />
+    <title>Stopwatch</title>
+    <link rel="stylesheet" type="text/css" href="assets/css/watch.css">
+</head>
+<body>
+  <div id="app" role="main" aria-label="Stopwatch Application - 12 hour format with AM PM">
+    <h1>Watch</h1>
+    <div id="display" role="timer" aria-live="polite" aria-atomic="true" aria-label="Current Local Time">
+      <div class="time-segment" aria-label="Hours">
+        <span class="time-value" id="hours">00</span>
+      </div>
+      <div class="time-divider" aria-hidden="true">:</div>
+      <div class="time-segment" aria-label="Minutes">
+        <span class="time-value" id="minutes">00</span>
+      </div>
+      <div class="time-divider" aria-hidden="true">:</div>
+      <div class="time-segment" aria-label="Seconds">
+        <span class="time-value" id="seconds">00</span>
+      </div>
+      <div id="ampm" aria-label="AM or PM">AM</div>
+    </div>
+  </div>
+
+<script src="assets/js/watch.js"></script>
+</body>
+</html>

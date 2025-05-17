@@ -1,0 +1,401 @@
+.skills-title {
+  width: 100%;
+  text-align: center;
+  font-size: 48px;
+  margin-bottom: 60px;
+}
+
+.skills-title span {
+  color: var(--secondary-color);
+}
+
+.bar.html i {
+  color: #c95d2e;
+}
+
+.bar.css i {
+  color: #147bbc;
+}
+
+.bar.js i {
+  color: #b0bc1e;
+}
+
+.sub-title span {
+  color: var(--highlight-color);
+}
+
+section {
+  display: flex;
+  flex-wrap: wrap;
+}
+
+.container-2 {
+  width: 600px;
+  height: 500px;
+  padding: 75px 0 0 250px;
+  margin-left: 120px;
+}
+
+.heading1 {
+  text-align: center;
+  text-decoration: underline;
+  text-underline-offset: 10px;
+  text-decoration-thickness: 5px;
+  margin-bottom: 50px;
+}
+
+.technical-bars {
+  display: flex;
+  flex-direction: column;
+}
+
+.bar {
+  margin: 30px 0;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  position: relative;
+}
+
+.bar .info {
+  margin-bottom: 5px;
+}
+
+.bar .info span {
+  font-size: 17px;
+  font-weight: 500;
+  animation: showText 0.5s 1s linear forwards;
+  opacity: 0;
+}
+
+.progress-line {
+  position: relative;
+  border-radius: 10px;
+  width: 100%;
+  height: 5px;
+  background-color: var(--customized);
+  animation: animate 1s cubic-bezier(1, 0, 0, 1) forwards;
+  transform: scaleX(0);
+  transform-origin: left;
+  overflow: visible;
+}
+
+.progress-line span {
+  display: block;
+  height: 100%;
+  background: var(--secondary-color);
+  border-radius: 10px;
+  animation: animate 1s 1s cubic-bezier(1, 0, 0, 1) forwards;
+  transform: scaleX(0);
+  transform-origin: left;
+  position: relative;
+}
+
+@keyframes animate {
+  100% {
+    transform: scaleX(1);
+  }
+}
+
+.progress-line.html span {
+  width: 60%;
+}
+
+.progress-line.css span {
+  width: 58%;
+}
+
+.progress-line.js span {
+  width: 18%;
+}
+
+.progress-line span::after {
+  content: attr(data-label);
+  position: absolute;
+  top: -25px;
+  background-color: var(--highlight-color);
+  color: var(--primary-color);
+  padding: 2px 6px;
+  font-size: 12px;
+  border-radius: 4px;
+}
+
+.progress-line.html span::after {
+  content: "60%";
+  left: calc(60% - 25px);
+}
+
+.progress-line.css span::after {
+  content: "58%";
+  left: calc(58% - 25px);
+}
+
+.progress-line.js span::after {
+  content: "18%";
+  left: calc(18% - 25px);
+}
+
+.progress-line span::before {
+  content: "";
+  position: absolute;
+  width: 0;
+  height: 0;
+  border: 7px solid transparent;
+  border-bottom-width: 0;
+  border-right-width: 0;
+  border-top-color: var(--customized);
+  top: -10px;
+  right: 0;
+  animation: showText 0.5s 1.5s linear forwards;
+  opacity: 0;
+}
+
+@keyframes showText {
+  100% {
+    opacity: 1;
+  }
+}
+
+.radial-bars {
+  width: 100%;
+  display: flex;
+  flex-wrap: wrap;
+  justify-content: space-evenly;
+  align-items: flex-start;
+}
+
+.radial-bar {
+  position: relative;
+  width: 170px;
+  height: 170px;
+  margin-bottom: 30px;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  flex-direction: column;
+}
+
+.radial-bar svg {
+  width: 120px;
+  height: 120px;
+  z-index: 1;
+}
+
+.radial-bars .radial-bar .progress-bar {
+  stroke-width: 10;
+  stroke: var(--customized);
+  fill: transparent;
+  stroke-dasharray: 502;
+  stroke-dashoffset: 502;
+  stroke-linecap: round;
+  animation: animate-bar 1s linear forwards;
+}
+
+@keyframes animate-bar {
+  100% {
+    stroke-dashoffset: -1;
+  }
+}
+
+.path {
+  stroke-width: 10;
+  stroke: var(--secondary-color);
+  fill: transparent;
+  stroke-dasharray: 502;
+  stroke-dashoffset: 502;
+  stroke-linecap: round;
+}
+
+.path-1 {
+  animation: animate-path1 1s 1s linear forwards;
+}
+.path-2 {
+  animation: animate-path2 1s 1s linear forwards;
+}
+.path-3 {
+  animation: animate-path3 1s 1s linear forwards;
+}
+.path-4 {
+  animation: animate-path4 1s 1s linear forwards;
+}
+
+@keyframes animate-path1 {
+  100% {
+    stroke-dashoffset: 145.58;
+  }
+}
+
+@keyframes animate-path2 {
+  100% {
+    stroke-dashoffset: 185.74;
+  }
+}
+
+@keyframes animate-path3 {
+  100% {
+    stroke-dashoffset: 200.8;
+  }
+}
+
+@keyframes animate-path4 {
+  100% {
+    stroke-dashoffset: 75.7;
+  }
+}
+
+.radial-bar .percentage {
+  position: absolute;
+  top: 50%;
+  left: 50%;
+  transform: translate(-50%, -50%);
+  font-size: 17px;
+  font-weight: 500;
+  animation: showText 0.5s 1s linear forwards;
+  opacity: 0;
+}
+
+.radial-bar .text {
+  position: absolute;
+  bottom: -5px;
+  left: 50%;
+  transform: translateX(-50%);
+  font-size: 17px;
+  font-weight: 500;
+  white-space: nowrap;
+  animation: showText 0.5s 1s linear forwards;
+}
+
+@media (max-width: 768px) {
+  section#skills {
+    flex-direction: column;
+    align-items: center;
+  }
+
+  .container-2 {
+    width: 100%;
+    height: auto;
+    padding: 40px 20px;
+    margin-left: 0;
+  }
+
+  .technical-bars .bar {
+    width: 100%;
+  }
+
+  .radial-bars {
+    justify-content: center;
+    gap: 20px;
+  }
+
+  .radial-bar {
+    width: 150px;
+    height: 150px;
+  }
+}
+
+@media (max-width: 480px) {
+  .heading1 {
+    font-size: 22px;
+    text-underline-offset: 6px;
+    margin-bottom: 30px;
+  }
+
+  .bar .info span,
+  .radial-bar .percentage,
+  .radial-bar .text {
+    font-size: 14px;
+  }
+
+  .radial-bar {
+    width: 130px;
+    height: 130px;
+  }
+
+  .radial-bar svg {
+    width: 100px;
+    height: 100px;
+  }
+
+  .container-2 {
+    padding: 30px 15px;
+  }
+
+  .progress-line span::after {
+    font-size: 10px;
+    padding: 1px 4px;
+  }
+
+  .progress-line span::before {
+    border: 5px solid transparent;
+    border-top-color: var(--customized);
+    top: -8px;
+  }
+}
+
+@media (max-width: 768px) {
+  section#skills {
+    flex-direction: column;
+    align-items: center;
+  }
+
+  .container-2 {
+    width: 100%;
+    height: auto;
+    padding: 40px 20px;
+    margin-left: 0;
+  }
+
+  .technical-bars .bar {
+    width: 100%;
+  }
+
+  .radial-bars {
+    justify-content: center;
+    gap: 20px;
+  }
+
+  .radial-bar {
+    width: 150px;
+    height: 150px;
+  }
+}
+
+@media (max-width: 480px) {
+  .heading1 {
+    font-size: 22px;
+    text-underline-offset: 6px;
+    margin-bottom: 30px;
+  }
+
+  .bar .info span,
+  .radial-bar .percentage,
+  .radial-bar .text {
+    font-size: 14px;
+  }
+
+  .radial-bar {
+    width: 130px;
+    height: 130px;
+  }
+
+  .radial-bar svg {
+    width: 100px;
+    height: 100px;
+  }
+
+  .container-2 {
+    padding: 30px 15px;
+  }
+
+  .progress-line span::after {
+    font-size: 10px;
+    padding: 1px 4px;
+  }
+
+  .progress-line span::before {
+    border: 5px solid transparent;
+    border-top-color: var(--customized);
+    top: -8px;
+  }
+}
