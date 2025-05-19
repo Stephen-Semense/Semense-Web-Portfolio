@@ -1,0 +1,232 @@
+body {
+    margin: 0;
+    height: 100vh; 
+    background-image: url("../image/BackGround.jpg");
+    background-repeat: no-repeat;
+    background-size: cover;
+    background-position: center; 
+    background-attachment: fixed;
+}
+
+html {
+    scroll-behavior: smooth;
+}
+table, th, td{
+     width: 100%;
+     table-layout: fixed;
+     text-align: center;
+     font-size: 27px;
+     border-collapse: collapse;
+     border: 5px solid black;
+     font-family: Elaphont;
+     margin-bottom: 50px;
+}
+tr, th, td{
+    padding: 15px;
+}
+img{
+    width: 100%;
+}
+.calendar{
+     margin: auto;
+     padding: 50px;
+     max-width: 800px;
+     font-family: serif;
+     font-weight: bold;
+     color: black;
+}
+
+.month{
+     text-align: center;
+     background: #F4F4F4;
+     font-size: 80px;
+     letter-spacing: 1px;
+     color: black;
+     border: 5px solid black;
+}
+th{
+    background: #009900;
+    color: white;
+    font-family: arial black;
+}
+td{
+    background: #4682B4;
+    color: yellow;
+}
+td:hover{
+    background: green;
+}
+.holiday{
+    color: red;
+}
+a{
+    text-decoration: none;
+}
+.sunday{
+    background: #FF6347;
+}
+.saturday {
+    background: #FFD700;
+}
+a{
+    top: 50%;
+    left: 50%;
+    transform: translate(-50%, -50%);
+    color: white;
+    font-weight: bold;
+    text-decoration: none;
+    font-size: 24px;
+    background: rgba(0, 0, 0, 0.5);
+    padding: 5px 10px;
+    border-radius: 5px;
+}
+.new-year {
+    background: url('../image/NewYear.jpg') no-repeat center center;
+    background-size: cover;
+    position: relative;
+}
+.sinulog{
+    background: url('../image/Sinulog.jpg') no-repeat center center;
+    background-size: cover;
+    position: relative;
+}
+.lailatul-isra-wal-mi-raj{
+    background: url('../image/Lailatul\ Isra\ Wal\ Mi\ Raj.png') no-repeat center center;
+    background-size: cover;
+    position: relative;
+}
+.chinese-new-year{
+    background: url('../image/ChineseNewYear.jpg') no-repeat center center;
+    background-size: cover;
+    position: relative;
+}
+.people-power{
+    background: url('../image/PeoplePower.png') no-repeat center center;
+    background-size: cover;
+    position: relative;
+}
+.ramadan-start{
+    background: url('../image/Ramadan.jpg') no-repeat center center;
+    background-size: cover;
+    position: relative;
+}
+.eid-al-fitr{
+    background: url('../image/EidAlFitr.jpg') no-repeat center center;
+    background-size: cover;
+    position: relative;
+}
+.day-of-valor{
+    background: url('../image/DayofValor.jpg') no-repeat center center;
+    background-size: cover;
+    position: relative;
+}
+.maundy-thursday{
+    background: url('../image/MaundyThursday.jpg');
+    background-size: cover;
+    position: relative;
+}
+.good-friday{
+    background: url('../image/GoodFriday.jpg') no-repeat center center;
+    background-size: cover;
+    position: relative;
+}
+.black-saturday{
+    background: url('../image/BlackSaturday.jpg') no-repeat center center;
+    background-size: cover;
+    position: relative;
+}
+.easter-sunday{
+    background: url('../image/EasterSunday.jpg') no-repeat center center;
+    background-size: cover;
+    position: relative;
+}
+.labor-day{
+    background: url('../image/LaborDay.jpg') no-repeat center center;
+    background-size: cover;
+    position: relative;
+}
+.eid-al-adha{
+    background: url('../image/EidAlAdha.jpg') no-repeat center center;
+    background-size: cover;
+    position: relative;
+}
+.eid-al-adha-day-2{
+    background: url('../image/EidAlAdhaDay2.jpeg') no-repeat center center;
+    background-size: cover;
+    position: relative;
+}
+.independence-day{
+    background: url('../image/IndependenceDay.jpg') no-repeat center center;
+    background-size: cover;
+    position: relative;
+}
+.amun-jadid{
+    background: url('../image/AmunJadid.jpg') no-repeat center center;
+    background-size: cover;
+    position: relative;
+}
+.ninoy-aquino-day{
+    background: url('../image/NinoyAquinoDay.png') no-repeat center center;
+    background-size: cover;
+    position: relative;
+}
+.national-heroes-day{
+    background: url('../image/NationalHeroesDay.jpg') no-repeat center center;
+    background-size: cover;
+    position: relative;
+}
+.maulid-un-nabi{
+    background: url('../image/MaulidUn-Nabi.jpg') no-repeat center center;
+    background-size: cover;
+    position: relative;
+}
+.special-non-working-day{
+    background: url('../image/SpecialNon-workingDay.jpg') no-repeat center center;
+    background-size: cover;
+    position: relative;
+}
+.all-saints-day{
+    background: url('../image/AllSaintsDay.webp') no-repeat center center;
+    background-size: cover;
+    position: relative;
+}
+.all-souls-day{
+    background: url('../image/AllSoulsDay.jpg') no-repeat center center;
+    background-size: cover;
+    position: relative;
+}
+.bonifacio-day{
+    background: url('../image/BonifacioDay.jpg') no-repeat center center;
+    background-size: cover;
+    position: relative;
+}
+.immaculate-conception{
+    background: url('../image/ImmaculateConception.jpg') no-repeat center center;
+    background-size: cover;
+    position: relative;
+}
+.christmas-eve{
+    background: url('../image/ChristmasEve.jpg') no-repeat center center;
+    background-size: cover;
+    position: relative;
+}
+.christmas-day{
+    background: url('..image/ChristmasDay.jpg') no-repeat center center;
+    background-size: cover;
+    position: relative;
+}
+.rizal-day{
+    background: url('../image/RizalDay.jpg') no-repeat center center;
+    background-size: cover;
+    position: relative;
+}
+.new-year-eve{
+    background: url('../image/NewYear.jpg') no-repeat center center;
+    background-size: cover;
+    position: relative;
+}
+.cebu-charter-day{
+    background: url('../image/CebuCharterDay.jpg') no-repeat center center;
+    background-size: cover;
+    position: relative;
+}
