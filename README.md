@@ -1,4 +1,4 @@
-Portfolio link: https://stephen-semense.github.io/Semense-Web-Portfolio/
+Portfolio link: https://stephen-semense.github.io/Portfolio/
 
 INTERACTIVE:
 
